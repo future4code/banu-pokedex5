@@ -4,7 +4,7 @@ import { Button, ButtonGroup } from "@chakra-ui/react"
 
 
 
-const Container = styled.div`
+const HeaderContainer = styled.div`
     position: fixed;
     top: 0;
     left: 0;
@@ -25,17 +25,43 @@ const Container = styled.div`
 const VerPokedex = styled.div`
     padding-left: 15px;
 `
+
+const BodyContainer = styled.div`
+    font-weight: 300;
+    background: rgb(131,205,237);
+background: linear-gradient(86deg, rgba(131,205,237,1) 35%, rgba(194,231,247,1) 100%);
+    color: #18242e;
+    font-family: "Lato",sans-serif;
+    line-height: 1.4;
+    height: 100vh;
+`
+
 export default function Home(){
     return (
-        <Container>
-            <VerPokedex>
-                <Button colorScheme="blue" size="md">Button</Button>
-            </VerPokedex>
+        
+        <div>
+            
+            
+                <HeaderContainer>
+                    <VerPokedex>
+                        <Button colorScheme="blue" size="md">Ver Pokedex</Button>
+                    </VerPokedex>
+                    <div>
+                       Lista de pokemons
+                    </div>
+                </HeaderContainer>
 
-            <div>
-               Lista de pokemons
-            </div>
-        </Container>
+                <BodyContainer>
+                   
+
+                </BodyContainer>
+            
+            
+        </div>
+
+          
+
+
     )
 }
 
