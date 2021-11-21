@@ -1,8 +1,9 @@
+import {CardPokemonHome} from './components/CardPokemonHome'
 
 function App() {
   return (
     <div>
-      POKEDEX
+      <CardPokemonHome />
     </div>
   );
 }
