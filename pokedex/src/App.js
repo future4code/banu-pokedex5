@@ -1,9 +1,12 @@
-import {CardPokemonHome} from './components/CardPokemonHome'
+import {Router} from './routes'
+document.title = "Pokedex"
+
+
 
 function App() {
   return (
     <div>
-      <CardPokemonHome />
+      <Router />
     </div>
   );
 }
