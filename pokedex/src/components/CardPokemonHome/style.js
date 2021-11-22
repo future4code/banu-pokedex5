@@ -13,17 +13,14 @@ export const ContainerPokemon = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     border-radius: 30px;
-    border: 1px solid #7c7c7c;
-    background-color: #a7a7a7;
+    background-color: #cacaca;
+    box-shadow: 2px 1px #888888;
     padding: 5px;
     img {
-        height: 170px;
-    }
-    h3 {
-        padding-top: 3px;
+        height: 140px;
     }
 `
 export const ContainerButton = styled.div`
@@ -32,7 +29,7 @@ export const ContainerButton = styled.div`
     align-items: center;
     justify-content: center;
     button {
-        margin: 5px;
-        padding: 5px;
+        margin: 3px;
+        padding: 7px;
     }
 `

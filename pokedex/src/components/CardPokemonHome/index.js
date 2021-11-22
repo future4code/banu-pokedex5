@@ -1,11 +1,13 @@
 import * as React from 'react';
-import Pikachu from '../../img/pikachu.png'
-import Charmander from '../../img/charmander.png'
-import {ContainerCard, ContainerPokemon , ContainerButton} from './style'
-
-import Button from '@mui/material/Button';
-import DeleteIcon from '@mui/icons-material/Delete';
-import Stack from '@mui/material/Stack';
+import Pikachu from '../../img/pikachu.png';
+import Charmander from '../../img/charmander.png';
+import {ContainerCard, ContainerPokemon , ContainerButton} from './style';
+import Fab from '@mui/material/Fab';
+import Tooltip from '@mui/material/Tooltip';
+import AddIcon from '@mui/icons-material/Add';
+import Typography from '@mui/material/Typography';
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import Paper from '@mui/material/Paper';
 
 
 export const CardPokemonHome = () => {
@@ -15,24 +17,28 @@ export const CardPokemonHome = () => {
             <ContainerCard>
                 <ContainerPokemon>
                     <img src={Pikachu} alt='Pikachu'/>
-                    <h3>Pikachu</h3>
-                </ContainerPokemon>
-                <Stack direction="row" spacing={2}>
+                    <Typography variant="h6" component="div">Pikachu</Typography>
                     <ContainerButton>
-                        <Button variant="outlined" startIcon={<DeleteIcon />}>Delete</Button>
-                        <button>Adicionar a Pokedex</button>
-                        <button>Detalhes</button>
+                        <Tooltip title="Detalhes">
+                            <Fab variant="extended" 
+                                size="small" 
+                                color="success" 
+                                aria-label="details">
+                                <MoreHorizIcon/>
+                            </Fab>
+                        </Tooltip>
+
+                        <Tooltip title="Adicionar">
+                            <Fab variant="extended" 
+                                size="small" 
+                                aria-label="add">
+                                <AddIcon />
+                            </Fab>
+                        </Tooltip>
                     </ContainerButton>
-                </Stack>
+                </ContainerPokemon>
             </ContainerCard>
-        {/* <ContainerCardPokemonHome>
-            <img src={Charmander} alt='Charmander'/>
-            <h1>Charmander</h1>
-            <div>
-                <button>Adicionar a Pokedex</button>
-                <button>Detalhes</button>
-            </div>
-        </ContainerCardPokemonHome> */}
         </div>
     )
 }
+
