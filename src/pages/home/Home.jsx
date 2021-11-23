@@ -79,20 +79,25 @@ export default function Home(){
                    <PictureBackground>
                    
                    <source
-                   type="image/webp" 
-                   srcset="https://c4.wallpaperflare.com/wallpaper/280/139/794/pokemon-background-desktop-wallpaper-preview.jpg" 
-                    media="(min-width: 768px) and (max-width: 1023px)">
+                        type="image/webp" 
+                        srcset="https://c4.wallpaperflare.com/wallpaper/280/139/794/pokemon-background-desktop-wallpaper-preview.jpg" 
+                        media="(min-width: 768px) and (max-width: 1023px)">
                     </source>
+                    <source
+                        type="image/webp"
+                        srcset="https://c4.wallpaperflare.com/wallpaper/280/139/794/pokemon-background-desktop-wallpaper-preview.jpg" 
+                        media="(min-width: 1024px) and (max-width: 1339px)"></source>
+                    
                     <img
-                    class="image tablet-gt"
-                    decoding="async" 
-                    loading="lazy" 
-                    src="https://c4.wallpaperflare.com/wallpaper/280/139/794/pokemon-background-desktop-wallpaper-preview.jpg" alt="" width="2127" height="1197"></img>
+                        class="image tablet-gt"
+                        decoding="async" 
+                        loading="lazy" 
+                        src="https://c4.wallpaperflare.com/wallpaper/280/139/794/pokemon-background-desktop-wallpaper-preview.jpg" alt="" width="2127" height="1197"></img>
+                   </PictureBackground>
+                   </IntroBackgroundImage>
                     
                        
 
-                   </PictureBackground>
-                   </IntroBackgroundImage>
 
                 </IntroBackground>
             
