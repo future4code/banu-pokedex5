@@ -4,7 +4,7 @@ import { Button, ButtonGroup } from "@chakra-ui/react"
 
 
 
-const HeaderContainer = styled.div`
+const Navbar = styled.div`
     position: fixed;
     top: 0;
     left: 0;
@@ -35,26 +35,66 @@ background: linear-gradient(86deg, rgba(131,205,237,1) 35%, rgba(194,231,247,1) 
     line-height: 1.4;
     height: 100vh;
 `
-
+const IntroBackground = styled.div`
+    font-weight: 300;
+    background: #0c1c3e;
+    color: #18242e;
+    font-family: "Lato",sans-serif;
+    line-height: 1.4;
+    margin: 0;
+`
+const IntroBackgroundImage = styled.div`
+    font-weight: 300;
+    background: #0c1c3e;
+    color: #18242e;
+    font-family: "Lato",sans-serif;
+    line-height: 1.4;
+    margin: 0;
+`
+const PictureBackground = styled.div`
+    font-weight: 300;
+    background: #0c1c3e;
+    color: #18242e;
+    font-family: "Lato",sans-serif;
+    line-height: 1.4;
+    margin: 0;
+`
 export default function Home(){
     return (
         
         <div>
             
             
-                <HeaderContainer>
+                <Navbar>
                     <VerPokedex>
                         <Button colorScheme="blue" size="md">Ver Pokedex</Button>
                     </VerPokedex>
                     <div>
                        Lista de pokemons
                     </div>
-                </HeaderContainer>
+                </Navbar>
 
-                <BodyContainer>
+                <IntroBackground>
+                   <IntroBackgroundImage>
+                   <PictureBackground>
                    
+                   <source
+                   type="image/webp" 
+                   srcset="https://c4.wallpaperflare.com/wallpaper/280/139/794/pokemon-background-desktop-wallpaper-preview.jpg" 
+                    media="(min-width: 768px) and (max-width: 1023px)">
+                    </source>
+                    <img
+                    class="image tablet-gt"
+                    decoding="async" 
+                    loading="lazy" 
+                    src="https://c4.wallpaperflare.com/wallpaper/280/139/794/pokemon-background-desktop-wallpaper-preview.jpg" alt="" width="2127" height="1197"></img>
+                    
+                       
 
-                </BodyContainer>
+                   </PictureBackground>
+                   </IntroBackgroundImage>
+
+                </IntroBackground>
             
             
         </div>
