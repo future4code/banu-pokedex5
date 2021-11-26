@@ -1,11 +1,9 @@
-import {Router} from './routes'
-document.title = "Pokedex"
-
+import { Router } from "./Router";
 
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Router />
     </div>
   );
