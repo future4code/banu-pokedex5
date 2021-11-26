@@ -1,5 +1,6 @@
 import * as React from 'react'
 import styled from 'styled-components'
+import { Button, ButtonGroup } from "@chakra-ui/react"
 
 
 const IntroContent = styled.div`
@@ -15,18 +16,37 @@ const IntroContent = styled.div`
 
 `
 const Cards = styled.h1`
+    background-color: white;
+    border: 1px solid white;
+    height: 35vh;
+    width: 250px;
+    margin: 10px;
     display: flex;
-    /* Put a card in the next row when previous cards take all width */
-    flex-wrap: wrap;
-    margin-left: 88px;
-    margin-right: 8px;
+    flex-direction: column;
+    
 `
-const CardItem = styled.div`
-border: 1px solid black;
-flex-basis: 1%;
-padding-left: 8px;
-padding-right: 8px;
-color: black;
+const CardCover = styled.div`
+    background: rgb(241, 241, 241);
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+   
+`
+const CardContent = styled.div`
+    height: 25%;
+    flex: 1;
+    background-color: white;
+    color: blue;
+`
+const Botoes = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+`
+const ImageCard = styled.img`
+    height: 70%;
+    width: 85%;
 `
 
 
@@ -35,18 +55,24 @@ const CardPokemonHome = () => {
 
     return (
         
-            <IntroContent>
-                <Cards>
-     {/* A card with given width  */}
-                <CardItem>
-                        <h1>Here should have an image and a description</h1>
-                </CardItem>
+        <IntroContent>
+            <Cards>     
+                <CardCover>
+                        <ImageCard src="https://gamepress.gg/pokemonmasters/sites/pokemonmasters/files/2020-04/pm0008_00_kameil_256.ktx_.png" alt="wartortle" />
+                </CardCover>
+                <CardContent>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore dicta vitae iure ration</p>
+                </CardContent>
+                <Botoes>
+                    <Button colorScheme="blue" size="md">Add a Pokedéx</Button>
+                    <Button colorScheme="orange" size="md">Ver detalhes</Button>
+                </Botoes>
 
-     {/* Repeat other cards  */}
+     
                 
-                </Cards>
+            </Cards>
             
-            </IntroContent>
+        </IntroContent>
        
         
     )
