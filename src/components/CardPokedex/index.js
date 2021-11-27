@@ -1,11 +1,10 @@
 import {Pikachu} from '../../source'
 import {ContainerCardPokedex, ContainerDate} from './style'
-import {useState, useEffect} from 'react';
+import {useState, useEffect, useNavigate } from 'react';
 
 export const CardPokedex = () => {
     const [pokedex, setPokedex] = useState([])
     
-
     return (
         <ContainerCardPokedex>
             <img src={Pikachu} />
